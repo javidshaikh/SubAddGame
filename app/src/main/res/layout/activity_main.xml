@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/layone"
+
+    tools:context="com.example.mrrobot.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/layout"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:tag="addonetag"
+            android:background="@drawable/btn_shape"
+            android:id="@+id/buttonone"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:tag="addtwotag"
+            android:gravity="center"
+            android:background="@drawable/btn_shape"
+            android:id="@+id/buttontwo"
+            android:layout_margin="40dp"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="addthreetag"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/btn_shape"
+            android:id="@+id/buttonthree"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/layout"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/layouttwo"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:tag="subonetag"
+            android:gravity="center"
+            android:background="@drawable/btn_shape"
+            android:id="@+id/button2one"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#fff"
+            android:tag="subtwotag"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/btn_shape"
+            android:id="@+id/button2two"
+            android:layout_margin="40dp"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:tag="subthreetag"
+            android:gravity="center"
+            android:background="@drawable/btn_shape"
+            android:id="@+id/button2three"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/givenrandomtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Given Text"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_shape"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:layout_below="@+id/givenrandomtext"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/equals"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Sum"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:id="@+id/addedno"
+        android:layout_below="@+id/equals"
+        android:background="@drawable/btn_shape"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+
+        android:layout_centerInParent="true"
+        android:background="#00c1fc"
+        android:id="@+id/relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Won..."
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:layout_marginTop="20sp"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:textColor="#fff"
+            android:background="@drawable/btn_shape"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/play"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textColor="#fff"
+            android:background="@drawable/btn_shape"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/exit"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+
